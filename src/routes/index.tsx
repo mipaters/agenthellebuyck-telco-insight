@@ -10,8 +10,8 @@ export const Route = createFileRoute("/")({
     meta: [
       { title: "Retention Cockpit · Rogers Wireless Interactions Analytics" },
       { name: "description", content: "Predict, explain and save every subscriber worth saving — Rogers Wireless retention cockpit powered by real-time interaction analytics." },
-      { property: "og:title", content: "Rogers Wireless · Retention Cockpit" },
-      { property: "og:description", content: "Save every subscriber worth saving. Live churn scoring, SHAP explanations, and next-best offers." },
+      { property: "og:title", content: "Retention Cockpit · Rogers Wireless Interactions Analytics" },
+      { property: "og:description", content: "Predict, explain and save every subscriber worth saving — Rogers Wireless retention cockpit powered by real-time interaction analytics." },
     ],
   }),
   component: Cockpit,
