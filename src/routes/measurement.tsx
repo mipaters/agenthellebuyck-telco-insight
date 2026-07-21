@@ -6,9 +6,9 @@ import { ShieldCheck, TrendingUp, Coins, Scale, Target, RefreshCw } from "lucide
 export const Route = createFileRoute("/measurement")({
   head: () => ({
     meta: [
-      { title: "Closed-Loop Measurement · Rogers Wireless" },
+      { title: "Closed-Loop Measurement · Agent Hellebuyck" },
       { name: "description", content: "Every save measured against a randomised holdout, attributed by offer arm, fed back to retrain the model." },
-      { property: "og:title", content: "Closed-Loop Measurement · Rogers Wireless" },
+      { property: "og:title", content: "Closed-Loop Measurement · Agent Hellebuyck" },
       { property: "og:description", content: "31% save rate · $310 per save · 6.6× program return." },
     ],
   }),

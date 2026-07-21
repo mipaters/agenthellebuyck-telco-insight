@@ -8,10 +8,10 @@ import {
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Retention Cockpit · Rogers Wireless Interactions Analytics" },
-      { name: "description", content: "Predict, explain and save every subscriber worth saving — Rogers Wireless retention cockpit powered by real-time interaction analytics." },
-      { property: "og:title", content: "Retention Cockpit · Rogers Wireless Interactions Analytics" },
-      { property: "og:description", content: "Predict, explain and save every subscriber worth saving — Rogers Wireless retention cockpit powered by real-time interaction analytics." },
+      { title: "Retention Cockpit · Agent Hellebuyck Interactions Analytics" },
+      { name: "description", content: "Predict, explain and save every subscriber worth saving — Agent Hellebuyck retention cockpit powered by real-time interaction analytics." },
+      { property: "og:title", content: "Retention Cockpit · Agent Hellebuyck Interactions Analytics" },
+      { property: "og:description", content: "Predict, explain and save every subscriber worth saving — Agent Hellebuyck retention cockpit powered by real-time interaction analytics." },
     ],
   }),
   component: Cockpit,
@@ -58,7 +58,7 @@ function Cockpit() {
               Save every subscriber<br />worth saving.
             </h1>
             <p className="mt-5 max-w-xl text-[15px] leading-relaxed text-muted-foreground">
-              The Interactions Analytics Platform reads every signal on the Rogers network —
+              The Interactions Analytics Platform reads every signal on the Operator Network —
               contract, device, sentiment and usage — to predict which subscribers will churn,
               explain why, and arm the agent with the next-best offer live on the call.
             </p>

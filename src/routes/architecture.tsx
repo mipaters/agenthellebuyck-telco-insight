@@ -7,9 +7,9 @@ import { Brain, Zap, RefreshCw, ChevronDown, Sparkles, Radio, Mic, Server, Datab
 export const Route = createFileRoute("/architecture")({
   head: () => ({
     meta: [
-      { title: "Under the Hood · Architecture · Rogers Wireless" },
-      { name: "description", content: "Daily churn brain, real-time assist orchestrator on Azure Container Apps, and closed-loop measurement — the Rogers Wireless retention platform." },
-      { property: "og:title", content: "Under the Hood · Rogers Wireless" },
+      { title: "Under the Hood · Architecture · Agent Hellebuyck" },
+      { name: "description", content: "Daily churn brain, real-time assist orchestrator on Azure Container Apps, and closed-loop measurement — the Agent Hellebuyck retention platform." },
+      { property: "og:title", content: "Under the Hood · Agent Hellebuyck" },
       { property: "og:description", content: "Runs on Azure you already own. XGBoost + SHAP · 174 features · Daily batch." },
     ],
   }),

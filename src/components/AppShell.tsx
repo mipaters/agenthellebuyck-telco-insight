@@ -30,7 +30,7 @@ export function AppShell({ children }: { children: ReactNode }) {
               <span className="absolute inset-0 rounded-full border border-primary/40 animate-ping-slow" />
             </span>
             <span className="leading-tight">
-              <span className="block text-[15px] font-semibold tracking-tight">Rogers Wireless</span>
+              <span className="block text-[15px] font-semibold tracking-tight">Agent Hellebuyck</span>
               <span className="block text-[10px] font-mono uppercase tracking-[0.18em] text-muted-foreground">
                 Interactions Analytics Platform
               </span>
@@ -90,7 +90,7 @@ export function AppShell({ children }: { children: ReactNode }) {
       <main className="mx-auto max-w-[1400px] px-6 py-10">{children}</main>
       <footer className="border-t border-border/60 mt-16">
         <div className="mx-auto max-w-[1400px] px-6 py-6 flex flex-wrap items-center justify-between gap-3 text-xs text-muted-foreground font-mono">
-          <span>Rogers Wireless · Interactions Analytics Platform</span>
+          <span>Agent Hellebuyck · Interactions Analytics Platform</span>
           <span>Runs on Azure you already own · XGBoost + SHAP · 174 features</span>
         </div>
       </footer>

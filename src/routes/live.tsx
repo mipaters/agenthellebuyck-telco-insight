@@ -7,8 +7,8 @@ import { ArrowLeft, Wallet, Calendar, Smartphone, Wifi, Sparkles, Radio, Play, P
 export const Route = createFileRoute("/live")({
   head: () => ({
     meta: [
-      { title: "Live Call · Agent Assist · Rogers Wireless" },
-      { name: "description", content: "Real-time agent assist on the Rogers Wireless call — live transcription, sentiment, and adaptive next-best offers." },
+      { title: "Live Call · Agent Assist · Agent Hellebuyck" },
+      { name: "description", content: "Real-time agent assist on the Agent Hellebuyck call — live transcription, sentiment, and adaptive next-best offers." },
       { property: "og:title", content: "Live Call · Agent Assist" },
       { property: "og:description", content: "The copilot listens, hints, and adapts the offer in real time." },
     ],
@@ -19,7 +19,7 @@ export const Route = createFileRoute("/live")({
 type Line = { who: "AGENT" | "CUSTOMER" | "COPILOT"; text: string; t: number };
 
 const SCRIPT: Line[] = [
-  { who: "AGENT", text: "Hi Marcus, thanks for calling Rogers. I can see you're on the Infinite 85 plan — how can I help today?", t: 3 },
+  { who: "AGENT", text: "Hi Marcus, thanks for calling us. I can see you're on the Infinite 85 plan — how can I help today?", t: 3 },
   { who: "CUSTOMER", text: "Honestly I'm thinking of cancelling. My contract's almost up and Bell offered me a better deal.", t: 7 },
   { who: "COPILOT", text: "Cancel-intent detected · switch to retention track. Verify offer match before quoting.", t: 8 },
   { who: "AGENT", text: "I hear you — let me pull up what we can do to keep you with us.", t: 12 },
