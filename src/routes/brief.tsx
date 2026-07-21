@@ -6,9 +6,9 @@ import { ArrowLeft, Activity, Gauge, Wallet, Calendar, Smartphone, Wifi, MapPin,
 export const Route = createFileRoute("/brief")({
   head: () => ({
     meta: [
-      { title: "Subscriber 360 · Pre-call Brief · Rogers Wireless" },
-      { name: "description", content: "Pre-call screen-pop with churn score, SHAP attribution, and full Subscriber 360 for Rogers Wireless retention agents." },
-      { property: "og:title", content: "Subscriber 360 · Rogers Wireless" },
+      { title: "Subscriber 360 · Pre-call Brief · Agent Hellebuyck" },
+      { name: "description", content: "Pre-call screen-pop with churn score, SHAP attribution, and full Subscriber 360 for Agent Hellebuyck retention agents." },
+      { property: "og:title", content: "Subscriber 360 · Agent Hellebuyck" },
       { property: "og:description", content: "Churn 0.38 · top 3% · Contract expiry in 12 days. Explained by SHAP." },
     ],
   }),
