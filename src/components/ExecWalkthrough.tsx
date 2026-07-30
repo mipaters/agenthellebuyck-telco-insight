@@ -1,4 +1,5 @@
 import { useEffect, useLayoutEffect, useState } from "react";
+import { setWalkthrough, useWalkthrough } from "@/lib/walkthrough-store";
 import { useNavigate, useRouterState } from "@tanstack/react-router";
 import { ChevronLeft, ChevronRight, CheckCircle2, Compass, PlayCircle, X } from "lucide-react";
 
@@ -101,7 +102,9 @@ export const WALKTHROUGH_STEPS: Step[] = [
 ];
 
 export function ExecWalkthrough({ onClose }: { onClose: () => void }) {
-  const [i, setI] = useState(0);
+  const { step: i } = useWalkthrough();
+  const setI = (n: number | ((p: number) => number)) =>
+    setWalkthrough({ step: typeof n === "function" ? n(i) : n });
   const [rect, setRect] = useState<DOMRect | null>(null);
   const step = WALKTHROUGH_STEPS[i];
   const navigate = useNavigate();
