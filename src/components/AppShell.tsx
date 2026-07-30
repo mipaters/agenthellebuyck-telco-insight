@@ -1,6 +1,7 @@
 import { Link, useRouterState } from "@tanstack/react-router";
 import { useEffect, useState, type ReactNode } from "react";
-import { LayoutGrid, UserRound, Headphones, LineChart, Layers, Moon, Sun, Radio } from "lucide-react";
+import { LayoutGrid, UserRound, Headphones, LineChart, Layers, Moon, Sun, Radio, PlayCircle } from "lucide-react";
+import { ExecWalkthrough } from "@/components/ExecWalkthrough";
 
 const NAV = [
   { to: "/", label: "Cockpit", icon: LayoutGrid },
@@ -13,6 +14,7 @@ const NAV = [
 export function AppShell({ children }: { children: ReactNode }) {
   const pathname = useRouterState({ select: (s) => s.location.pathname });
   const [dark, setDark] = useState(false);
+  const [tourOpen, setTourOpen] = useState(false);
 
   useEffect(() => {
     const root = document.documentElement;
@@ -60,6 +62,14 @@ export function AppShell({ children }: { children: ReactNode }) {
           </nav>
 
           <div className="flex items-center gap-2">
+            <button
+              onClick={() => setTourOpen(true)}
+              className="inline-flex items-center gap-1.5 rounded-full bg-primary px-3.5 py-1.5 text-xs font-medium text-primary-foreground hover:brightness-110 transition"
+            >
+              <PlayCircle className="h-3.5 w-3.5" />
+              <span className="hidden sm:inline">Executive demo</span>
+              <span className="sm:hidden">Demo</span>
+            </button>
             <span className="hidden sm:inline-flex items-center gap-2 rounded-full bg-amber/20 px-3 py-1 text-[11px] font-mono uppercase tracking-widest text-primary">
               <span className="h-1.5 w-1.5 rounded-full bg-primary animate-pulse-dot" />
               Live
@@ -94,6 +104,7 @@ export function AppShell({ children }: { children: ReactNode }) {
           <span>Runs on Azure you already own · XGBoost + SHAP · 174 features</span>
         </div>
       </footer>
+      {tourOpen && <ExecWalkthrough onClose={() => setTourOpen(false)} />}
     </div>
   );
 }
