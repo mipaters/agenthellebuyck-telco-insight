@@ -72,7 +72,7 @@ function LiveCall() {
 
       <div className="mt-8 grid gap-4 lg:grid-cols-[300px_1fr_320px]">
         {/* Left column: subscriber summary + sentiment */}
-        <div className="space-y-4">
+        <div id="tour-assist" className="space-y-4">
           <Panel tint>
             <div className="flex items-center justify-between">
               <div className="text-[10px] font-mono uppercase tracking-widest text-muted-foreground">On the line</div>
@@ -127,7 +127,7 @@ function LiveCall() {
         </div>
 
         {/* Center: transcript */}
-        <Panel className="min-h-[560px] flex flex-col">
+        <Panel id="tour-transcript" className="min-h-[560px] flex flex-col">
           <div className="flex flex-wrap items-center justify-between gap-3 pb-4 border-b border-border/60">
             <div className="flex items-center gap-2">
               <span className="inline-flex items-center gap-2 rounded-full bg-primary/10 px-3 py-1 text-[11px] font-mono uppercase tracking-widest text-primary">

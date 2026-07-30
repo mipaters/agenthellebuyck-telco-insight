@@ -33,7 +33,7 @@ function Measurement() {
         </Chip>
       </div>
 
-      <section className="mt-8 grid gap-4 md:grid-cols-2 xl:grid-cols-4">
+      <section id="tour-roi" className="mt-8 grid gap-4 md:grid-cols-2 xl:grid-cols-4">
         {[
           { icon: ShieldCheck, k: "Save rate", v: "31%", s: "treatment · vs 22% randomised holdout" },
           { icon: TrendingUp, k: "Holdout lift", v: "+8.6 pts", s: "causal lift, holdout-adjusted" },
@@ -54,7 +54,7 @@ function Measurement() {
         ))}
       </section>
 
-      <section className="mt-6 grid gap-4 lg:grid-cols-[1.6fr_1fr]">
+      <section id="tour-retention" className="mt-6 grid gap-4 lg:grid-cols-[1.6fr_1fr]">
         <Panel>
           <SectionLabel icon={<Target className="h-3.5 w-3.5" />} right={<span>Cohort retention vs randomised control</span>}>
             Retention Curve · T+90

@@ -53,7 +53,7 @@ function Brief() {
 
       <div className="mt-8 grid gap-4 lg:grid-cols-[minmax(0,340px)_1fr]">
         {/* Churn risk */}
-        <Panel tint>
+        <Panel tint id="tour-score">
           <SectionLabel icon={<Gauge className="h-3.5 w-3.5" />} right={<span>Daily model score</span>}>
             Churn Risk
           </SectionLabel>
@@ -91,7 +91,7 @@ function Brief() {
         </Panel>
 
         {/* SHAP */}
-        <Panel>
+        <Panel id="tour-shap">
           <SectionLabel icon={<Activity className="h-3.5 w-3.5" />} right={<span>Per-subscriber feature contributions</span>}>
             Why — SHAP Attribution
           </SectionLabel>
@@ -161,7 +161,7 @@ function Brief() {
       </Panel>
 
       {/* Next best offers */}
-      <Panel className="mt-6">
+      <Panel id="tour-nbo" className="mt-6">
         <SectionLabel right={<span>Ranked by expected save value</span>}>Recommended Next-Best Offers</SectionLabel>
         <div className="grid gap-3 md:grid-cols-3">
           {[
