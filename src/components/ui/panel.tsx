@@ -4,13 +4,16 @@ export function Panel({
   children,
   className = "",
   tint = false,
+  id,
 }: {
   children: ReactNode;
   className?: string;
   tint?: boolean;
+  id?: string;
 }) {
   return (
     <div
+      id={id}
       className={
         "rounded-2xl border border-border p-6 " +
         (tint ? "bg-cream" : "bg-card") +
