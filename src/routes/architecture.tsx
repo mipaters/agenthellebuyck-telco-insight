@@ -82,7 +82,7 @@ function Architecture() {
         </div>
       </div>
 
-      <section className="mt-8">
+      <section id="tour-arch" className="mt-8">
         <div className="grid gap-4 lg:grid-cols-[1fr_auto_1fr_auto_1fr]">
           {PHASES.map((p, i) => (
             <Fragment key={p.n}>

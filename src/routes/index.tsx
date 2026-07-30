@@ -47,7 +47,7 @@ function Cockpit() {
   return (
     <AppShell>
       {/* Hero */}
-      <section className="relative overflow-hidden rounded-3xl border border-border bg-cream p-8 md:p-12">
+      <section id="tour-hero" className="relative overflow-hidden rounded-3xl border border-border bg-cream p-8 md:p-12">
         <div className="grid gap-10 md:grid-cols-[1.15fr_1fr] items-center">
           <div>
             <div className="inline-flex items-center gap-2 rounded-full bg-primary/10 px-3 py-1 text-[11px] font-mono uppercase tracking-[0.18em] text-primary">
@@ -133,7 +133,7 @@ function Cockpit() {
       </section>
 
       {/* KPI Grid */}
-      <section className="mt-6 grid gap-4 md:grid-cols-2 xl:grid-cols-4">
+      <section id="tour-kpis" className="mt-6 grid gap-4 md:grid-cols-2 xl:grid-cols-4">
         {[
           { icon: Users, label: "Subscribers at risk", v: "2,412", s: "This scoring cycle · avg score 0.29" },
           { icon: DollarSign, label: "Monthly MRC exposed", v: "$1.42M", s: "$17.0M annualised at risk" },
@@ -155,7 +155,7 @@ function Cockpit() {
       </section>
 
       {/* Horizons + signals */}
-      <section className="mt-6 grid gap-4 lg:grid-cols-[1.4fr_1fr]">
+      <section id="tour-horizons" className="mt-6 grid gap-4 lg:grid-cols-[1.4fr_1fr]">
         <Panel>
           <SectionLabel
             icon={<Activity className="h-3.5 w-3.5" />}
@@ -217,7 +217,7 @@ function Cockpit() {
 
       {/* Queue */}
       <section className="mt-6">
-        <Panel>
+        <Panel id="tour-queue">
           <SectionLabel icon={<PhoneCall className="h-3.5 w-3.5" />} right={<span>Ranked by churn probability · 14 subscribers</span>}>
             Today's Retention Queue
           </SectionLabel>
