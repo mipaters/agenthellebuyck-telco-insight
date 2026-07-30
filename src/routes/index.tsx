@@ -8,10 +8,10 @@ import {
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Retention Cockpit · Agent Hellebuyck Interactions Analytics" },
-      { name: "description", content: "Predict, explain and save every subscriber worth saving — Agent Hellebuyck retention cockpit powered by real-time interaction analytics." },
-      { property: "og:title", content: "Retention Cockpit · Agent Hellebuyck Interactions Analytics" },
-      { property: "og:description", content: "Predict, explain and save every subscriber worth saving — Agent Hellebuyck retention cockpit powered by real-time interaction analytics." },
+      { title: "Retention Cockpit · Churn Reduction Agent Assist Interactions Analytics" },
+      { name: "description", content: "Predict, explain and save every subscriber worth saving — Churn Reduction Agent Assist retention cockpit powered by real-time interaction analytics." },
+      { property: "og:title", content: "Retention Cockpit · Churn Reduction Agent Assist Interactions Analytics" },
+      { property: "og:description", content: "Predict, explain and save every subscriber worth saving — Churn Reduction Agent Assist retention cockpit powered by real-time interaction analytics." },
     ],
   }),
   component: Cockpit,

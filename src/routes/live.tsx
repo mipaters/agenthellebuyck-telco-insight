@@ -7,8 +7,8 @@ import { ArrowLeft, Wallet, Calendar, Smartphone, Wifi, Sparkles, Radio, Play, P
 export const Route = createFileRoute("/live")({
   head: () => ({
     meta: [
-      { title: "Live Call · Agent Assist · Agent Hellebuyck" },
-      { name: "description", content: "Real-time agent assist on the Agent Hellebuyck call — live transcription, sentiment, and adaptive next-best offers." },
+      { title: "Live Call · Agent Assist · Churn Reduction Agent Assist" },
+      { name: "description", content: "Real-time agent assist on the Churn Reduction Agent Assist call — live transcription, sentiment, and adaptive next-best offers." },
       { property: "og:title", content: "Live Call · Agent Assist" },
       { property: "og:description", content: "The copilot listens, hints, and adapts the offer in real time." },
     ],

@@ -19,7 +19,7 @@ export const WALKTHROUGH_STEPS: Step[] = [
     chapter: "Welcome",
     title: "Executive walkthrough",
     body:
-      "Agent Hellebuyck predicts which subscribers are about to leave, explains why in plain language, and arms the agent with the right offer in the moment. This 9-stop tour follows one subscriber from daily score to measured save.",
+      "Churn Reduction Agent Assist predicts which subscribers are about to leave, explains why in plain language, and arms the agent with the right offer in the moment. This 9-stop tour follows one subscriber from daily score to measured save.",
     bullets: [
       "Pre-call: score, rank and explain churn risk",
       "In-call: real-time assist and next-best offer",
