@@ -14,7 +14,7 @@ const NAV = [
 
 export function AppShell({ children }: { children: ReactNode }) {
   const pathname = useRouterState({ select: (s) => s.location.pathname });
-  const [dark, setDark] = useState(false);
+  const [dark, setDark] = useState(true);
   const { open: tourOpen } = useWalkthrough();
 
   useEffect(() => {
